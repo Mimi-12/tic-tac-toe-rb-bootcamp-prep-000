@@ -67,7 +67,8 @@ def winner(board)
     won_array = won?(board)
     won_array ? board[won_array[0]] : nil
 end
-def play
+
+def play(board)
     turn until over?(board)
     puts draw?(board)  "Cat's Game!" : "Congratulations #{winner}!"
   end
