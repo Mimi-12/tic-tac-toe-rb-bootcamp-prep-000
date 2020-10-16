@@ -72,4 +72,3 @@ def play
    turn until over?
    puts draw? ? "Cat's Game!" : "Congratulations #{winner}!"
  end
-end
