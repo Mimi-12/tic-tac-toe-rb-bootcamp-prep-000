@@ -31,3 +31,6 @@ WIN_COMBINATIONS = [
           true
         end
       end
+def turn_count
+    board.count{|token| token == "X" || token == "O"}
+ end
