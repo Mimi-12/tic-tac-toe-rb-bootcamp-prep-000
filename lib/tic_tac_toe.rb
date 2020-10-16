@@ -24,10 +24,10 @@ WIN_COMBINATIONS = [
   def position_taken?(board,index)
       !(board[index].nil? || board[index] == " ")
     end
-  def valid_move?(index,board)
-        if position_taken?(index,board) == true
+  def valid_move?(board,index)
+        if position_taken?(board,index) == true
           false
-        elsif index.between?(0, 8) && position_taken?(index,board) == false
+        elsif index.between?(0, 8) && position_taken?(board,index) == false
           true
         end
       end
