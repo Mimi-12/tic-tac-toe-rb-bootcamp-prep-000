@@ -48,7 +48,7 @@ def turn(board)
       turn(board)
     end
   end
-  def won?
+  def won?(board)
     WIN_COMBINATIONS.detect do |winning_combo|
       winning_combo.all?{|x| board[x] == "X"} ||
       winning_combo.all?{|x| board[x] == "O"}
