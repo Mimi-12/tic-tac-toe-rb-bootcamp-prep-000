@@ -63,3 +63,7 @@ def turn(board)
 def over?(board)
 won?(board) || draw?(board) || full?(board)
 end
+def winner(board)
+    won_array = won?
+    won_array ? board[won_array[0]] : nil
+end
