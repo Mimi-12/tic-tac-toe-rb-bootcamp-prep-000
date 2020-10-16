@@ -38,7 +38,7 @@ def turn_count(board)
  def current_player(board)
      turn_count(board).even? ? "X" : "O"
    end
-def turn(board)
+def turn(board,index)
    puts "Please enter 1-9:"
    input = gets.strip
    index = input_to_index(input)
