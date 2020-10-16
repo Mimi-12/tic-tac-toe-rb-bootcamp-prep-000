@@ -14,18 +14,18 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-16T20:49:46+00:00">2020-10-16T20:49:46+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-16T20:51:16+00:00">2020-10-16T20:51:16+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">93.33%</span></span>
+    (<span class="covered_percent"><span class="green">96.67%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.4
+         2.8
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>1</b> files in total.
     <b>30</b> relevant lines. 
-    <span class="green"><b>28</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <span class="green"><b>29</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#e711950d664b89b3c64ac8ad9f45fc14260f171a" class="src_link" title="lib/tic_tac_toe.rb">lib/tic_tac_toe.rb</a></td>
-        <td class="green strong">93.33 %</td>
+        <td class="green strong">96.67 %</td>
         <td>51</td>
         <td>30</td>
-        <td>28</td>
-        <td>2</td>
-        <td>2.4</td>
+        <td>29</td>
+        <td>1</td>
+        <td>2.8</td>
       </tr>
       
     </tbody>
@@ -79,11 +79,11 @@
         <div class="source_table" id="e711950d664b89b3c64ac8ad9f45fc14260f171a">
   <div class="header">
     <h3>lib/tic_tac_toe.rb</h3>
-    <h4><span class="green">93.33 %</span> covered</h4>
+    <h4><span class="green">96.67 %</span> covered</h4>
     <div>
       <b>30</b> relevant lines. 
-      <span class="green"><b>28</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="green"><b>29</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -216,8 +216,8 @@
           <code class="ruby"> def move(board,index,token)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="22">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="22">
+          <span class="hits">4</span>
           
           <code class="ruby">    board[index] = token</code>
         </li>
@@ -294,8 +294,8 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="35">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="30" data-linenumber="35">
+          <span class="hits">30</span>
           
           <code class="ruby">    board.count{|token| token == &quot;X&quot; || token == &quot;O&quot;}</code>
         </li>
@@ -318,8 +318,8 @@
           <code class="ruby"> def current_player(board)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="39">
+          <span class="hits">2</span>
           
           <code class="ruby">     turn_count(board).even? ? &quot;X&quot; : &quot;O&quot;</code>
         </li>
@@ -363,7 +363,7 @@
         <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
-          <code class="ruby">     move(index, token, board = current_player(board))</code>
+          <code class="ruby">     move(board,index,token = current_player(board))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
@@ -384,8 +384,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
-          
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
           
           <code class="ruby">    display_board</code>
         </li>
