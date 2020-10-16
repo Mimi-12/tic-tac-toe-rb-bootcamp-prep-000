@@ -58,5 +58,5 @@ def turn(board)
    board.all?{|x| x == "X" || x == "O"}
  end
  def draw?(board)
-    !won?(board) && full?(board) true : false
+    !won?(board) && full?(board)
   end
