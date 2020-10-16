@@ -21,6 +21,6 @@ WIN_COMBINATIONS = [
  def move(board,index,token)
     board[index] = token
   end
-  def position_taken?(index)
+  def position_taken?(index,board)
       !(board[index].nil? || board[index] == " ")
     end
