@@ -54,3 +54,6 @@ def turn(board)
       winning_combo.all?{|x| board[x] == "O"}
     end
   end
+  def full?(board)
+   board.all?{|x| x == "X" || x == "O"}
+ end
