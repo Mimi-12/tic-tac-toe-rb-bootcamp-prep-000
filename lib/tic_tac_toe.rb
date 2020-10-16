@@ -18,3 +18,6 @@ WIN_COMBINATIONS = [
  def input_to_index(input)
     input.to_i - 1
  end
+ def move(index,board,token)
+    board[index] = token
+  end
