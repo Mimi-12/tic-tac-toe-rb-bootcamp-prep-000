@@ -70,5 +70,5 @@ end
 
 def play(board)
    turn? until over?
-   puts draw?(board)? "Cat's Game!" : "Congratulations #{winner}!"
+   puts draw? ? "Cat's Game!" : "Congratulations #{winner}!"
  end
