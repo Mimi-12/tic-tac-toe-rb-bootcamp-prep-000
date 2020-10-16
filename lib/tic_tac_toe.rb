@@ -50,7 +50,7 @@ def turn(board)
   end
   def won?
     WIN_COMBINATIONS.detect do |winning_combo|
-      winning_combo.all?{|x| @board[x] == "X"} ||
-      winning_combo.all?{|x| @board[x] == "O"}
+      winning_combo.all?{|x| board[x] == "X"} ||
+      winning_combo.all?{|x| board[x] == "O"}
     end
   end
